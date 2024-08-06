@@ -1,0 +1,126 @@
+Python Lists Questions:
+
+1. What is a list in Python and how is it different from other data structures?
+    answer: Python's list is a flexible, versatile, powerful, and popular built-in data type.
+            It allows you to create variable-length and mutable sequences of objects. 
+            In a list, you can store objects of any type. 
+            You can also mix objects of different types within the same list, 
+            although list elements often share the same type.
+            The most flexible data structure in Python is a list. They are used to store a variety of data items, 
+            ranging from integers to strings and even another list! They are mutable,
+            meaning their elements can be changed even after the list has been created.
+2. How do you create an empty list in Python?
+    answer: You can create an empty list in Python using either square brackets [] or the list() function.
+            An empty list can be used as a placeholder for data that will be added later, or to represent a lack 
+            of data. To use an empty list, you can add items using methods like .append().
+3. How do you add elements to a list in Python?
+    answer: 1. list.append(elem) -- adds a single element to the end of the list. ...
+            2. list.insert(index, elem) -- inserts the element at the given index, shifting elements to the right.
+            3. list.extend(list2) adds the elements in list2 to the end of the list.
+4. Can a list contain elements of different data types in Python?
+    answer: Lists in Python are implemented as dynamic mutable arrays which hold an ordered collection of items.
+            Although it's not really common, a list can also contain a mix of Python types including strings,
+            floats, and booleans. You're now going to add the room names to your list, so you can easily see 
+            both the room name and size together.
+5. How do you access elements from a list in Python using indexing?
+    answer: Indexing in Python starts at 0, which means that the first element in a sequence has an index of 0,
+            the second element has an index of 1, and so on. For example, if we have a string "Hello", 
+            we can access the first letter "H" using its index 0 by using the square bracket notation: string[0].
+6. What is the difference between positive and negative indexing in Python lists?  
+    answer: Positive indexing − Increases from 0 to 1. Negative indexing − each traversal moves 
+            from tail to head, starting with the last element.
+            So index 0, 1, 2, 3… for the first, second, third, fourth items etc. Negative indexing 
+            starts from index -1 for the last list item, subtracting down in reverse fashion toward 
+            the first item. So index -1, -2, -3, -4… for the last, second to last, third to last, 
+            fourth to last, etc.
+7. How do you update or modify an element in a list in Python?
+    answer: To update directly an existing element in a list, with a new value, you can use 
+            the assignment( = ) operator with the specified index. For example, you can update 
+            the element at the index position of 2 in a mylist by assigning the value 35 to mylist[2] . 
+            After updating, the list becomes [10, 20, 35, 40, 50]. 
+8. How do you remove elements from a list in Python?
+    answer: We can remove elements from the list using ,
+            1. The remove() method removes the specified item.
+            2. The pop() method removes the specified index.
+            3. The del keyword can also delete the list completely.
+            4. The clear() method empties the list.
+9. How can you check if a specific element exists in a list in Python?
+    answer: Check if an element exists in a list in Python
+            1. Using “in” Statement 
+            2. Using a loop 
+            3. Using any() function
+            4. Using count() function
+            5. Using sort with bisect_left and set()
+            6. Using find() method
+            7. Using Counter() function
+            8. Using try-except block
+10. What is the difference between the append() and extend() methods in Python lists?
+    answer: The append() method adds a single element to the end of the list while the 
+            extend() method adds all the elements of an iterable to the end of the list.
+11. How do you find the length of a list in Python?
+    answer: You can use Python's built-in len() function to find 
+    the length of a list with the syntax, listLength = len(my_list) .
+12. Can you have nested lists in Python? If yes, how do you access elements from nested lists?
+    answer: A list within another list is referred to as a nested list in Python. 
+            We can also say that a list that has other lists as its elements is a nested list.
+            To access values inside a nested list in Python, you can use square brackets to chain 
+            multiple index accesses together. For example, to access the first element of the second 
+            sublist in a nested list called my_list, you can use my_list[1][0].
+13. How do you iterate over elements in a list using a for loop in Python?
+    answer: Let’s see all the different ways to iterate over a list in Python and the performance 
+            comparison between them.
+
+            1. Using for loop
+            2. Using for loop and range()
+            3. Using a while loop
+            4. Using list comprehension
+            5. Using enumerate() method
+            6. Using the iter function and the next function
+            7. Using the map() function
+            8. Using zip() Function
+            9. Using NumPy module
+14. What is list slicing in Python? How does it work?
+    answer: As mentioned earlier list slicing in Python is a common practice and can be used 
+            both with positive indexes as well as negative indexes.
+            Lst[ Initial : End : IndexJump ]
+15. Can you sort a list in Python? If yes, how can you accomplish it?
+    answer: Sorting is nothing but arranging the elements of a list in a particular order 
+            and this order can be either increasing or decreasing in nature. We can sort a list in 
+            Python without using the list sort() function by using nested for loops. Let us see a few 
+            examples, of how we can sort a list without the sort() function.
+16. What is the difference between the sort() and sorted() functions/methods in Python?
+    answer: sort() directly modifies the original list, while sorted() keeps the original list 
+            intact and creates a new sorted list. This means that if you need to preserve the original 
+            order, sorted() is the safer choice.
+17. How do you reverse the order of elements in a list in Python?
+    answer: We use the reverse() method on my_list , which reverses the order of the elements in the list. 
+            When we print my_list , we see that the elements are now in reverse order. This is just the tip of 
+            the iceberg when it comes to reversing lists in Python.
+            and also using the indexing like list[start:end:-1(step)]
+18. How can you count the occurrences of a specific element in a list?
+    answer: Below are the methods by which we can count all occurrences of an element in a Python List.
+
+            1. Using a loop in Python
+            2. Using List Comprehension
+            3. Using enumerate function
+            4. Using count()
+            5. Using Counter()
+            6. Using countOf()
+            7. Using dictionary comprehension
+            8. Using Pandas’s Library
+19. How do you clear or empty a list in Python?
+    answer: There are many ways of clearing the list through methods of different constructs offered by Python language. Let’s try to understand each of the methods one by one.
+
+            1. Using clear()
+            2. Reinitializing the list
+            3. Using “*= 0”
+            4. Using del
+            5. Using pop() method
+            6. Using slicing
+            7. using list comprehension
+20. Can you create a list of lists in Python? If yes, how can you access elements from nested lists within the main list?
+    answer: A list of lists in Python is a list where each element of the outer list is itself a list. 
+            This creates a two-dimensional structure, often referred to as a matrix or a 2D list. 
+            Each inner list can have a different length, allowing for irregular or jagged structures. 
+            This versatile data structure is commonly used to represent tabular data, matrices, or nested 
+            collections of elements.

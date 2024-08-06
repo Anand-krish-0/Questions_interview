@@ -1,0 +1,106 @@
+1. What is a dictionary in Python and what are its key characteristics?
+answer: In Python, dictionaries are mutable data structures that allow you to store key-value pairs. 
+        Dictionary can be created using the dict() constructor or curly braces' {}'. 
+        Once you have created a dictionary, you can add, remove, or update elements using 
+        the methods dict. update(), dict. pop(), and dict.
+2. How do you create an empty dictionary in Python?
+answer: first create a variable name which will be the name of the dictionary. 
+        Then, assign the variable to an empty set of curly braces, {} .
+3. How do you create a dictionary with initial key-value pairs in Python?
+answer: Initialize Dictionary in Python: 7 Methods. 
+        Method 1: Passing Key-Value Pairs as Literals. 
+        Method 2: Using dict() constructor. 
+        Method 3: Using Lists. 
+        Method 4: Using Dictionary Comprehension. 
+        Method 5: Using Tuples. 
+        Method 6: Using the fromkeys()
+        Method 7: Using a Generator Expression.
+        Initialize an Empty Dictionary.
+4. Can a dictionary contain duplicate keys in Python?
+answer: Dictionary items are ordered, changeable, and do not allow duplicates.
+5. How do you access values from a dictionary using keys in Python?
+answer: A dictionary is quite a useful data structure in Python programming that is 
+        usually used to hash a particular key with value so that it can be retrieved efficiently.
+        To access an item in the dictionary, refer to its key name inside square brackets.
+        1. Using key() Method
+        2. Using values() Method
+        3. Using an operator
+        4. Using List Comprehension
+        5. Using dict.items()
+        6. Using enumerate() Method
+        7. Using for loop and items() method
+6. How do you add or update key-value pairs in a dictionary in Python?
+answer: Methods to Add New Keys to a Dictionary
+        1. Using the Bracket Notation. 
+        One of the simplest ways to add a new key-value pair to a dictionary 
+        is by using the bracket notation. ...
+        2. Using the update() Method. ...
+        3. Using the setdefault() Method. ...
+        4. Using the fromkeys() Method. ...
+        5. Using the dict() Constructor.
+7. How do you remove key-value pairs from a dictionary in Python?
+answer: ou can do so using the del keyword, which is the most common method of removing 
+        a key-value pair from a dictionary. The pop() method is useful when we need to remove 
+        a key-value pair and also get the value of the key-value pair. Using the popitem() function, 
+        we can remove the final key-value pair in a dictionary.
+8. Can you access elements from a dictionary using indexing in Python? Why or why not?
+answer: you should convert the `dict_keys` object to a list or use iteration to work with the keys.
+9. How do you find the number of key-value pairs in a dictionary in Python?
+answer: Using the len() Function
+        One of the easiest ways to find the length of a Python dictionary is by using 
+        the built-in len() function. The len() function returns the number of key-value pairs in a dictionary.
+10. How do you iterate over keys, values, and key-value pairs in a dictionary in Python?
+answer: Iterating over both keys and values
+        Now in case you need to iterate over both keys and values in one go, you can call items(). 
+        The method will return a tuple containing the key value pairs in the form (key, value)
+11. How do you check if a specific key exists in a dictionary in Python?
+answer: Check If the Key Exists Using has_key() Method
+        Using the has_key() method returns true if a given key is available in the dictionary, 
+        otherwise, it returns a false. With the Inbuilt method has_key(), use the if statement to 
+        check whether the key is present in the dictionary.
+12. Can a dictionary have values of different data types in Python?
+answer: Python allows the values in a dictionary to be any type – string, integer, a list, 
+        another dictionary, boolean, etc.
+13. How do you retrieve a list of all keys or values from a dictionary in Python?
+answer: Use the keys() function and apply it to the input dictionary to get the list of all 
+        the keys of a dictionary. Print the list of keys of a dictionary by traversing through 
+        each key in the above keys list using the list comprehension and for loop.
+14. Can you sort a dictionary in Python? If not, why?
+answer: dictionaries remember the order of items inserted as well. Thus we are also able to 
+        sort dictionaries using python's built-in sorted() function. Just like with other iterables, 
+        we can sort dictionaries based on different criteria depending on the key argument of 
+        the sorted() function.
+15. How do you merge or combine two dictionaries in Python?
+answer: There are various ways in which Dictionaries can be merged by using various 
+        functions and constructors in Python. Below are some following ways:
+
+        1. Using update()
+        2. Using unpacking operator
+        3. Using merge | operator
+        4. Using loops and keys() method
+        5. Using dict constructor
+        6. Using the dict() constructor with the union operator (|)
+        7. Using reduce()
+16. How do you create a shallow copy or clone of a dictionary in Python?
+answer: When we copy dictionaries in Python, using the copy() method, it returns a shallow 
+        copy of the original dictionary. In other words, it uses the original as a reference 
+        to create a new dictionary and does not make any changes in the original elements.
+17. Can a dictionary have nested dictionaries as values in Python? 
+    If yes, how do you access elements from nested dictionaries?
+answer: Nesting Dictionary means putting a dictionary inside another dictionary. 
+        Nesting is of great use as the kind of information we can model in programs is expanded greatly.
+        In order to access the value of any key in the nested dictionary, use indexing [] syntax.
+18. How do you clear or empty a dictionary in Python?
+answer: Python Dictionary clear() Method
+        The clear() method removes all the elements from a dictionary.
+19. How do you convert a dictionary into a list or tuple in Python?
+answer: steps:
+        1. Initialize the dictionary.
+        2. Sort the keys of the dictionary using the sorted() function.
+        3. Use a for loop to iterate over the sorted keys and create a list of tuples where 
+        the first element of each tuple is a key from the dictionary and the second element of each 
+        tuple is the corresponding value from the dictionary.
+20. What are some common use cases or advantages of using dictionaries in Python?
+answer: Python dictionaries allow us to associate a value to a unique key, and then to quickly 
+        access this value. It's a good idea to use them whenever we want to find (lookup for) a certain 
+        Python object. We can also use lists for this scope, but they are much slower than dictionaries.
